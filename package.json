@@ -1,0 +1,20 @@
+{
+  "name": "pca2d-backend",
+  "version": "1.0.0",
+  "description": "2D PCA principal-axis projection & reconstruction verification backend (API + CLI)",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/pca.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "npm run build --silent && node dist/src/cli.js",
+    "demo": "npm run build --silent && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
+
